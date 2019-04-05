@@ -1,1 +1,2 @@
-# programacion
+# programación
+Recursos compartidos
