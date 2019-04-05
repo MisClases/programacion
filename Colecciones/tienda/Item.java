@@ -12,7 +12,11 @@ package Mercado;
 public class Item {
     Producto p;
     int cantidad ;
-
+    
+    public Item(Producto p, int cantidad) {
+        this.p = p;
+        this.cantidad = cantidad;
+    }
     public Producto getP() {
         return p;
     }
@@ -29,10 +33,7 @@ public class Item {
         this.cantidad = cantidad;
     }
 
-    public Item(Producto p, int cantidad) {
-        this.p = p;
-        this.cantidad = cantidad;
-    }
+   
     @Override
     public String toString(){
        return String.format("%20s %6.2f %4d", p.getNombre(),p.getPrecio(),cantidad);
